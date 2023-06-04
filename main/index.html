@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="src/JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/70daf56398.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="src/assets/transparent.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>KHELO KIDS</title>
+</head>
+<body>
+    <div id="header">
+        <img id="bg-img" src="src/assets/transparent.png" alt="Logo" />
+        <div class="container">
+            <nav>
+                <!-- <h1>Khelo Kids</h1> -->
+                <img src="src/assets/transparent.png" alt="Logo" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark fa-fade" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fa-beat" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>JIXEN ENTERPRISES PVT. LTD.</p>
+                <h1>Insert Tagline Here!<span>,</span><br> Something</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------- ABOUT ---------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="block">
+                        <video src="src/assets/logo.png" autoplay loop  muted></video>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, corrupti a illum animi libero alias deserunt ab iure recusandae praesentium perferendis architecto sint officiis commodi laboriosam ipsum numquam deleniti dolorem.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('history')">History</p>
+                        <p class="tab-links" onclick="opentab('timeline')">Timeline</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="achievements">
+                        <ul>
+                            <li><span>Ach 1 <ind><i class="fa-solid fa-arrow-right-long"></i> current!</ind></span><br>achievements made 1</li>
+                            <li><span>Ach 2 <ind><i class="fa-solid fa-arrow-right-long"></i> since 1999</ind></span><br>achievements made 2</li>
+                            <li><span>Ach 3</span><br>achievements made 3</li>
+                            <li><span>Ach 4</span><br>achievements made 4</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="history">
+                        <ul>
+                            <li><span>Year 20XX</span><br>Lorem ipsum dolor sit amet. <ind><i class="fa-solid fa-arrow-right-long"></i> this year!</ind></li>
+                            <li><span>Year 20XX</span><br>Lorem ipsum dolor sit amet.</li>
+                            <li><span>Year 20XX</span><br>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="timeline">
+                        <div class="timeline">
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h2>Year</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque officiis quaerat et. Commodi, incidunt. Dolorem magnam aperiam reprehenderit laboriosam architecto quae unde eius, recusandae eaque quod quaerat error provident ullam?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
