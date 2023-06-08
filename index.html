@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="src/JS/script.js"></script>
-    <script src="https://kit.fontawesome.com/70daf56398.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="src/assets/transparent.png" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="src/JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/70daf56398.js" crossorigin="anonymous"></script>
     <title>KHELO KIDS</title>
 </head>
 <body>
@@ -18,11 +22,11 @@
                 <!-- <h1>Khelo Kids</h1> -->
                 <img src="src/assets/transparent.png" alt="Logo" class="logo" />
                 <ul id="sidemenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="About/">About</a></li>
+                    <li><a href="Services/">Services</a></li>
+                    <li><a href="Products/">Products</a></li>
+                    <li><a href="Contact/">Contact</a></li>
                     <i class="fa-solid fa-xmark fa-fade" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars fa-beat" onclick="openmenu()"></i>
@@ -68,37 +72,6 @@
                         </ul>
                     </div>
                     <div class="tab-contents" id="timeline">
-                        <!-- <div class="timeline">
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h2>Year</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque officiis quaerat et. Commodi, incidunt. Dolorem magnam aperiam reprehenderit laboriosam architecto quae unde eius, recusandae eaque quod quaerat error provident ullam?</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h2>Year 1</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ullam et totam. Asperiores enim voluptatem nulla sit magnam laboriosam animi aliquid, excepturi veritatis autem possimus modi corporis tenetur, numquam porro.</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h2>Year 2</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ullam et totam. Asperiores enim voluptatem nulla sit magnam laboriosam animi aliquid, excepturi veritatis autem possimus modi corporis tenetur, numquam porro.</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h2>Year 3</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ullam et totam. Asperiores enim voluptatem nulla sit magnam laboriosam animi aliquid, excepturi veritatis autem possimus modi corporis tenetur, numquam porro.</p>
-                                </div>
-                            </div>
-
-                        </div> -->
 
                         <ul>
                             <li style="--accent-color:#450AF9">
@@ -133,6 +106,66 @@
             </div>
         </div>
     </div>
+
+    <!-- ---------- PHOTOS ---------- -->
+
+    <div id="photos">
+        <div class="container">
+
+            <div id="page" class="site">
+                <div class="photocontainer">
+                    <div class="testimonials">
+                        <div class="head">
+                            <h3>Testimonials</h3>
+                            <p>See our reviews!</p>
+                        </div>
+                        <div class="body swiper">
+                            <ul class="swiper-wrapper">
+                    
+                                <li class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="thumbnail">
+                                    <img src="src/assets/transparent.png" alt="Om Pratap Dhaker">
+                                    </div>
+                                    <div class="aside">
+                                    <p>He is a programmer who is constantly trying to improve his skills. He is one of the prominent feather in the DPS Kolar's cap. He is a car guy who is obsessed with the JDMs. He is quite good at surprise rick rolls. Lastly He is the one who converts coffee to code.</p>
+                                    <div class="name">
+                                        <h4>Om Pratap Dhaker</h4>
+                                        <p>Web Developer</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </li>
+                    
+                                <li class="swiper-slide">
+                                    <div class="wrapper">
+                                        <div class="thumbnail">
+                                        <img src="src/assets/transparent.png" alt="Om Pratap Dhaker">
+                                        </div>
+                                        <div class="aside">
+                                        <p>He is a programmer who is constantly trying to improve his skills. He is one of the prominent feather in the DPS Kolar's cap. He is a car guy who is obsessed with the JDMs. He is quite good at surprise rick rolls. Lastly He is the one who converts coffee to code.</p>
+                                        <div class="name">
+                                            <h4>Om Pratap Dhaker</h4>
+                                            <p>Web Developer</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </li>
+                    
+                            </ul>
+                    
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <script>
         var sidemenu = document.getElementById("sidemenu");
         function openmenu() {
@@ -142,5 +175,26 @@
             sidemenu.style.right = "-200px";
         }
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoHeight: true,
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+
 </body>
 </html>
