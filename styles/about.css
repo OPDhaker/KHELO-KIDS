@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&display=swap');
+
+/* 
+font-family: 'Flow Circular', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Unica One', cursive;
+ */
+
+:root {
+    --black: #1a1a1a;
+    --bgcolor: #2a2a2a;
+    --blue: #450af9;
+    --violet: #790af9;
+    --gold: #D6af36;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--black);
+    color: var(--blue);
+}
+
+
+.product-navbar {
+    height: 40px;
+    width: 100%;
+    background: var(--black);
+    border-bottom: 1px solid var(--black);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: var(--gold);
+}
+.product-navbar .product-navbar-centered {
+    max-width: 90vw;
+    height: 20px;
+    margin: 0 5vw;
+}
+.product-navbar .product-navbar-centered ul {
+    margin: 0;
+    padding: 0;
+}
+.product-navbar .product-navbar-centered ul li {
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    padding-top: 9px;
+}
+.product-navbar .product-navbar-centered ul li a {
+    color: var(--gold);
+    text-shadow: 0 0 10px var(--gold);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: none !important;
+}
+.hero {
+    background: var(--bgcolor);
+    padding-left: 0;
+    padding-right: 0;
+}
+.hero .container {
+    margin: 0 5vw;
+    padding: 0 0vw;
+    max-width: 90vw;
+}
+.hero .navbar-brand {
+    color: var(--blue);
+    text-shadow: 0 0 10px var(--blue);
+}
+.hero .navbar-brand img {
+    margin-right: 7px;
+    margin-top: -7px;
+}
+#about-main {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+}
+#about-main .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+#about-main .jumbotron {
+    width: 100%;
+    height: 530px;
+    background: var(--bgcolor);
+    position: relative;
+    margin: 0;
+    z-index: 3;
+    border-radius: 0px;
+}
+#about-main .jumbotron .img-layer-container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#about-main .jumbotron .img-layer-container img {
+    max-width: 95vw;
+}
+#about-main .jumbotron .img-layer-container .team-image {
+    position: absolute;
+}
+#about-main .jumbotron .img-layer-container .team-image img {
+    position: relative;
+    z-index: 3;
+}
+#about-main .jumbotron .img-layer-container .circles-container {
+    position: absolute;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#about-main .jumbotron .img-layer-container .circles-container .img-1 {
+    position: absolute;
+    z-index: 2;
+}
+#about-main .jumbotron .img-layer-container .circles-container .img-2 {
+    position: absolute;
+    z-index: 5;
+}
+#about-main .jumbotron .jumbotron-inner {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+#about-main .jumbotron .jumbotron-inner a {
+    text-decoration: none;
+}
+#about-main .jumbotron .jumbotron-inner .top-box {
+    max-width: 950px;
+    margin: 0 auto;
+}
+#about-main .jumbotron .jumbotron-inner .top-box .content-box {
+    margin: 0 50px 35px;
+}
+#about-main .jumbotron .jumbotron-inner .top-box .content-box h1 {
+    text-align: center;
+    color: var(--gold);
+    text-shadow: 0 0 10px var(--gold);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#about-main .jumbotron .jumbotron-inner .top-box .content-box p {
+    text-align: center;
+    color: var(--blue);
+    text-shadow: 0 0 10px var(--blue);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 15px;
+}
+@media (max-width: 1401px) {
+    #about-main .jumbotron {
+        height: 595px !important;
+    }
+    #about-main .jumbotron .jumbotron-inner {
+        max-width: 900px;
+    }
+    #about-main .jumbotron .jumbotron-inner .top-box {
+        max-width: 900px;
+    }
+    #about-main .jumbotron .jumbotron-inner .top-box .content-box {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    #about-main .jumbotron .jumbotron-inner .top-box .content-box h3 {
+        font-size: 35px;
+        margin: 5px 0px 20px 0px;
+        color: #6f7782;
+        font-weight: 300;
+    }
+}
+@media (max-width: 1000px) {
+    #about-main .jumbotron .img-layer-container {
+        width: 100%;
+   }
+}
+@media (max-width: 815px) {
+    #about-main .jumbotron .jumbotron-inner {
+        max-width: 600px;
+   }
+}
+@media (max-width: 640px) {
+    #about-main .jumbotron {
+        height: 400px !important;
+   }
+    #about-main .jumbotron .jumbotron-inner {
+        max-width: 550px;
+        padding: 0 20px;
+   }
+    #about-main .jumbotron .img-1, #about-main .jumbotron .img-2, #about-main .jumbotron .team-image {
+        display: none;
+   }
+}
+@media (max-width: 420px) {
+    #about-main .jumbotron .jumbotron-inner {
+        max-width: 600px;
+        padding: 0 20px;
+   }
+}
+@media (max-width: 400px) {
+    #about-main .jumbotron .jumbotron-inner .top-box .content-box {
+        margin: 30px 0;
+   }
+    #about-main .jumbotron .jumbotron-inner .top-box .content-box h1 {
+        font-size: 35px;
+   }
+    #about-main .jumbotron .jumbotron-inner .top-box .content-box p {
+        font-size: 16px;
+   }
+}
+#about-main .story-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 150px;
+}
+@media (max-width: 640px) {
+    #about-main .story-container {
+        margin-top: 80px;
+   }
+}
+#about-main .story-container .container-divider {
+    margin-top: 100px;
+}
+@media (max-width: 640px) {
+    #about-main .story-container .container-divider {
+        margin-top: 50px;
+   }
+}
+#about-main .story-container .need-for-dx-container, #about-main .story-container .our-tech-container, #about-main .story-container .origin-story-container, #about-main .story-container .today-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@media (max-width: 815px) {
+    #about-main .story-container .need-for-dx-container, #about-main .story-container .our-tech-container, #about-main .story-container .origin-story-container, #about-main .story-container .today-container {
+        width: 100%;
+   }
+}
+#about-main .story-container .need-for-dx-container .img-container, #about-main .story-container .our-tech-container .img-container, #about-main .story-container .origin-story-container .img-container, #about-main .story-container .today-container .img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#about-main .story-container .need-for-dx-container .img-container img, #about-main .story-container .our-tech-container .img-container img, #about-main .story-container .origin-story-container .img-container img, #about-main .story-container .today-container .img-container img {
+    margin: 50px auto;
+}
+#about-main .story-container .need-for-dx-container h3, #about-main .story-container .our-tech-container h3, #about-main .story-container .origin-story-container h3, #about-main .story-container .today-container h3 {
+    color: var(--violet);
+}
+#about-main .story-container .need-for-dx-container p, #about-main .story-container .our-tech-container p, #about-main .story-container .origin-story-container p, #about-main .story-container .today-container p {
+    font-size: 15px;
+    margin-top: 20px;
+    color: var(--blue);
+}
+@media (max-width: 640px) {
+    #about-main .story-container .need-for-dx-container p, #about-main .story-container .our-tech-container p, #about-main .story-container .origin-story-container p, #about-main .story-container .today-container p {
+        font-size: 13px;
+   }
+}
+#about-main .story-container .need-for-dx-container ul, #about-main .story-container .our-tech-container ul, #about-main .story-container .origin-story-container ul, #about-main .story-container .today-container ul {
+    margin-top: 30px;
+    list-style-image: url('../src/assets/bullet.png');
+}
+#about-main .story-container .need-for-dx-container ul li, #about-main .story-container .our-tech-container ul li, #about-main .story-container .origin-story-container ul li, #about-main .story-container .today-container ul li {
+    line-height: 25px;
+    padding-left: 5px;
+    color: var(--gold);
+}
